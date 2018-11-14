@@ -1,0 +1,10 @@
+
+public class ExternalSerialize {
+
+	public static void main(String[] args) {
+		System.out.println("---------------- External Serialize Example ----------------");
+		System.out.println("------------------------------------------------------------");
+
+	}
+
+}

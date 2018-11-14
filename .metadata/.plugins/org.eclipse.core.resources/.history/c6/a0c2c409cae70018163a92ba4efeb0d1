@@ -1,0 +1,32 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class ExternalSerialize {
+
+	public static void main(String[] args) {
+		System.out.println("---------------- External Serialize Example ----------------");
+		System.out.println("------------------------------------------------------------");
+
+	}
+	
+	private void writeEmployeeObject() throws FileNotFoundException, IOException{
+		try {
+			FileOutputStream fos = new FileOutputStream("Employee.dat");
+			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			
+			Employee e1 = new Employee();
+			e1.id = 1; e1.name = "Maria"; e1.age = 20;
+			Employee e2 = new Employee();
+			e2.id = 2; e2.name = "Ramón"; e2.age = 40;
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

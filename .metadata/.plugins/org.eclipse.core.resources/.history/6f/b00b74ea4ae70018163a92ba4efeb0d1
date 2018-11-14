@@ -1,0 +1,10 @@
+
+public class SimpleSerialization {
+
+	public static void main(String[] args) {
+		System.out.println("--------------- SimpleSerialization ----------------");
+		System.out.println("--------------- ------------------- ----------------");
+
+	}
+
+}
