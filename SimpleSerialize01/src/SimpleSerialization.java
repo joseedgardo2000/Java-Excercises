@@ -26,7 +26,7 @@ public class SimpleSerialization {
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			Employee employeeRec = (Employee)ois.readObject();
 			Employee employeeRec2 = (Employee)ois.readObject();
-			System.out.println("Deserialized Object: ");
+			System.out.println("Deserialized Objects: ");
 			employeeRec.display();
 			employeeRec2.display();
 			ois.close();
